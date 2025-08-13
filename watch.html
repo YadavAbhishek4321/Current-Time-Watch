@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #maindiv{
+        background-color: rgb(86, 84, 84);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #para{
+        border: 2px solid rgb(255, 234, 0);
+        width: 180px;
+        height: 35px;
+        text-align: center;
+        align-content:center ;
+        border-radius: 5px;
+        box-shadow: 0 8px 16px yellow;
+        color: white;
+        font-size: 25px;
+    
+      
+    }
+    
+
+  
+    
+    
+</style>
+<body>
+    <div id="maindiv">
+        
+          <p id="para">
+           
+        </p>
+        <div id="line"></div>
+    </div>
+</body>
+<script>
+
+
+
+    function repeatFunction(){
+         let time=document.getElementById("para");
+    let currtime=new Date();
+    let samay=currtime.toLocaleTimeString();
+   
+    time.innerHTML=samay;
+
+       
+    }
+
+
+    setInterval(repeatFunction,1000);
+</script>
+</html>
